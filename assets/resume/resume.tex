@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.375in}
+%\addtolength{\evensidemargin}{-0.375in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Amanda Huntington} 
+  & Email : amanda.n.huntington@gmail.com \\
+  Web: anhuntington.github.io & Mobile : (714) 458-2880 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California Polytechnic University, San Luis Obispo}{San Luis Obispo, CA}
+      {Bachelor of Science in Business Administration}{Sept. 2012 -- June 2016}
+      
+      {Concentrations: Information Systems, Accounting; }
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Frank, Rimerman + Co. LLP}{San Francisco, CA}
+      {Senior Associate, Assurance and Advisory}{Oct 2016 -- Present}
+      \resumeItemListStart
+      \resumeItem{General}
+        {Gained comprehensive understanding of clients' technical or financial environments, operations, processes, and/or control environments and utilized that knowledge on projects.}
+      \resumeItem{Administrative}
+      {Participated in information technology and financial audits by assisting in planning, testing and corresponding delegation of duties, report compilation, and project administration}
+      \resumeItem{IT Audit}
+          {Conducted the testing of IT related controls under various frameworks to determine control effectiveness and to identify areas of control exceptions.}
+      \resumeItem{Financial Audit}
+         {Conducted the testing of various financial audit sections to provide reasonable and sufficient evidence necessary to form an opinion over the financial statements}
+      \resumeItem{Communication}
+        {Worked with engagement team to develop and communicate recommendations to clients for financial, IT and process improvements}
+      \resumeItem{Teamwork}
+        {Contributed to a positive working environment by building relationships with team members.}
+     \resumeItem{Time Management}
+        {Demonstrated flexibility in prioritizing and completing tasks while remaining engaged with internal and client management during the audit process.}
+       
+      \resumeItemListEnd
+      
+       \resumeSubheading
+      {Frank, Rimerman + Co. LLP}{Palo Alto, CA}
+      {Accounting Intern}{June 2015 -- Sept 2015}
+      \resumeItemListStart
+        \resumeItem{Rotational Program}
+          {Interned at Frank, Rimerman + Co. LLP the summer of 2015 in the firm's rotational program, which offered the change to divide time between the departments of assurance, consulting and tax. Internship converted to full-time occupation upon graduation from university.}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {George G. Ross, CPA}{Morro Bay, CA}
+      {Staff Accountant}{Oct. 2013 -- June 2016}
+      \resumeItemListStart
+        \resumeItem{General}
+          {Responsible for general accounting services for a variety of local business clients. Duties included the provision of bookkeeping and related services such as payroll processing.}
+        \resumeItem{Tax}
+          {Responsible for the preparation of individual and corporate federal and state tax returns, including corresponding coordination with the applicable governing entities.}
+        \resumeItem{Nonprofits}
+          {Responsible for obtaining and maintaining 501(c)(3) nonprofit status for local charities upon their formation and operation.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+    
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Relevant Skills}
+  \resumeSubHeadingListStart
+  \setlength\itemsep{0em}
+   \item{
+      \textbf{Languages}{: SQL, \LaTeX, VBA}
+   }
+   \item {
+    \textbf{Frameworks}
+          SOC 1, SOC 2, SOX, GAAP, COSO
+    }
+    \item{
+        \textbf{Interpersonal}: Adaptability, Teamork, Self-motivation, Communication
+    }
+     \item {   \textbf{Technologies}:
+          Unix, AWS, Oracle, Salesforce, 
+          Relational Databases, Microsoft Office Suite
+     
+    }
+    \item {
+      \textbf{Certifications}: CISA (exam passed Oct. 2018; pending other certification requirements)
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
+

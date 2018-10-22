@@ -1,53 +1,84 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
-
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+.comment-container {
+  overflow: auto;
+  margin-bottom: 2em; 
 }
 
+.comment-left ul, .comment-right ul {
+  padding: 0em;
+  list-style-position: inside;
+  line-height: 1em; 
+}
+.comment-left ul li, .comment-right ul li {
+  margin-bottom: 1em; 
+}
 
+.image-right, .image-button-right, .image-left, .image-button-left {
+  display: inline-block;
+  margin: 0.25em;
+  margin-top: 1em;
+  width: 256px;
+  height: auto; 
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@media screen and (max-width: 640px) {
+  .image-right, .image-button-right, .image-left, .image-button-left {
+    display: none; 
+  } 
+}
+
+.comment-left {
+  padding-right: 300px; 
+}
+
+@media screen and (max-width: 640px) {
+  .comment-left {
+    padding: 0; 
+  } 
+}
+
+.image-right, .image-button-right {
+  float: right; 
+}
+
+.image-button-right:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5); 
+}
+
+.comment-right {
+  padding-left: 300px; 
+}
+@media screen and (max-width: 640px) {
+  .comment-right {
+    padding: 0; 
+  } 
+}
+
+.image-left, .image-button-left {
+  float: left; 
+}
+
+.image-button-left:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5); 
+}
+.me {
+  float: right;
+  width: 256px;
+  height: auto;
+  margin: 1em;
+  margin-right: 0;
+}
+@media screen and (max-width: 620px) {
+  .me {
+    float: none !important;
+    margin: 1em auto;
+    display: block;
+  }
+}
+
+footer {
+  display: block;
+}

@@ -1,12 +1,6 @@
 # This is the config file for github
-
-# Site settings
 title: Amanda Huntington
 email: amanda.n.huntington@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Amanda Huntington's Personal Website
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
+description: Amanda Huntington's Personal Website
+baseurl: "" 
+url: "https://anhuntington.github.io/"
