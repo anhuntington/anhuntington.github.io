@@ -4,3 +4,5 @@ email: amanda.n.huntington@gmail.com
 description: Amanda Huntington's Personal Website
 baseurl: "" 
 url: "https://anhuntington.github.io/"
+
+theme: jekyll-theme-cayman
